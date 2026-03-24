@@ -1,0 +1,347 @@
+body{
+	
+}
+:root{
+	--color-negro:#282d33;
+	--menu-hover:#282d33;
+	--fondo-footer:#30363d;
+	--color-footer:#898989;
+	--color-primario: #e84f87;
+	--color-secundario: #f5a623;
+	--color-texto: #777777;
+	--color-titulos: #282d33;
+	--fondo-gris: #f9f9f9;
+	--color-borde: #eeeeee;
+}
+
+* {
+	box-sizing: border-box;
+}
+ 
+body {
+	font-family: 'Catamaran', sans-serif;
+	font-size: 14px;
+	color: var(--color-texto);
+	margin: 0;
+	padding: 0;
+}
+
+header{
+	background-color: #fff;
+	padding: 5px 0;
+	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
+}
+
+.hero-section {
+	width: 100%;
+}
+ 
+.carousel-item {
+	height: 460px;
+}
+ 
+.carousel-bg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-color: #555; /* fallback cuando no haya imagen */
+}
+ 
+.carousel-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(30, 30, 30, 0.55);
+}
+ 
+.carousel-caption-custom {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	width: 70%;
+	z-index: 2;
+}
+ 
+.carousel-title {
+	font-family: 'Catamaran', sans-serif;
+	font-size: 48px;
+	font-weight: 800;
+	color: #fff;
+	margin-bottom: 15px;
+}
+ 
+.carousel-subtitle {
+	font-family: 'Catamaran', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	color: #fff;
+	margin-bottom: 30px;
+}
+ 
+.btn-hero {
+	display: inline-block;
+	font-family: 'Catamaran', sans-serif;
+	font-size: 13px;
+	font-weight: 700;
+	letter-spacing: 1px;
+	color: #fff;
+	border: 2px solid #fff;
+	border-radius: 30px;
+	padding: 10px 28px;
+	text-decoration: none;
+	transition: background-color 0.3s, color 0.3s;
+}
+ 
+.btn-hero:hover {
+	background-color: #fff;
+	color: var(--color-negro);
+}
+
+.carousel-indicators-custom {
+	bottom: 20px;
+}
+ 
+.carousel-indicators-custom button {
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background-color: rgba(255, 255, 255, 0.5);
+	border: none;
+	margin: 0 4px;
+}
+ 
+.carousel-indicators-custom button.active {
+	background-color: #fff;
+}
+
+.intro-section {
+	background-color: #fff;
+	padding: 70px 0 50px;
+}
+ 
+.intro-item {
+	padding: 0 20px 40px;
+	text-align: center;
+}
+ 
+.intro-img-wrap {
+	overflow: hidden;
+	margin-bottom: 20px;
+}
+ 
+.intro-img {
+	width: 100%;
+	height: 200px;
+	object-fit: cover;
+	display: block;
+}
+ 
+.intro-title {
+	font-family: 'Catamaran', sans-serif;
+	font-size: 17px;
+	font-weight: 700;
+	color: var(--color-titulos);
+	margin-bottom: 10px;
+}
+ 
+.intro-desc {
+	font-family: 'Catamaran', sans-serif;
+	font-size: 13px;
+	font-weight: 400;
+	color: var(--color-texto);
+	line-height: 1.7;
+}
+
+.intro-section + .services-section {
+	border-top: 1px solid var(--color-borde);
+}
+
+.services-section {
+	background-color: #fff;
+	padding: 70px 0 60px;
+	border-top: 1px solid var(--color-borde);
+}
+ 
+.service-item {
+	padding: 20px 30px 30px;
+}
+ 
+.service-icon {
+	margin-bottom: 20px;
+}
+ 
+.service-icon-img {
+	width: 90px;
+	height: 90px;
+	object-fit: contain;
+}
+ 
+.service-title {
+	font-family: 'Catamaran', sans-serif;
+	font-size: 16px;
+	font-weight: 700;
+	color: var(--color-titulos);
+	margin-bottom: 12px;
+}
+ 
+.service-desc {
+	font-family: 'Catamaran', sans-serif;
+	font-size: 13px;
+	font-weight: 400;
+	color: var(--color-texto);
+	line-height: 1.7;
+}
+
+.cta-section {
+	position: relative;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	padding: 90px 0;
+	text-align: center;
+}
+ 
+.cta-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.08);
+}
+ 
+.cta-content {
+	position: relative;
+	z-index: 2;
+}
+ 
+.cta-title {
+	font-family: 'Catamaran', sans-serif;
+	font-size: 36px;
+	font-weight: 800;
+	color: #fff;
+	margin-bottom: 15px;
+}
+ 
+.cta-subtitle {
+	font-family: 'Catamaran', sans-serif;
+	font-size: 15px;
+	font-weight: 400;
+	color: rgba(255, 255, 255, 0.85);
+	margin-bottom: 35px;
+}
+ 
+.btn-cta {
+	display: inline-block;
+	font-family: 'Catamaran', sans-serif;
+	font-size: 13px;
+	font-weight: 700;
+	letter-spacing: 1px;
+	color: var(--color-titulos);
+	background-color: #fff;
+	border-radius: 30px;
+	padding: 12px 30px;
+	text-decoration: none;
+	transition: background-color 0.3s, color 0.3s;
+}
+ 
+.btn-cta:hover {
+	background-color: var(--color-titulos);
+	color: #fff;
+}
+
+.clients-section {
+	background-color: #fff;
+	padding: 50px 0;
+	border-top: 1px solid var(--color-borde);
+}
+ 
+.client-item {
+	padding: 15px 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+ 
+.client-img {
+	max-height: 45px;
+	width: auto;
+	filter: grayscale(0%);
+	opacity: 0.85;
+	transition: opacity 0.3s;
+}
+ 
+.client-img:hover {
+	opacity: 1;
+}
+
+
+
+footer{
+	background-color: var(--fondo-footer);
+	color: var(--color-footer);
+	padding: 20px 0;
+	text-align: center;
+	font-size: 13px;
+	font-family: 'Catamaran', sans-serif;
+}
+
+footer p {
+	margin: 0;
+}
+ 
+footer b {
+	color: #fff;
+}
+
+@media (max-width: 991px) {
+	.carousel-title {
+		font-size: 36px;
+	}
+	.carousel-item {
+		height: 380px;
+	}
+	.cta-title {
+		font-size: 28px;
+	}
+}
+ 
+@media (max-width: 767px) {
+	.carousel-item {
+		height: 320px;
+	}
+	.carousel-title {
+		font-size: 26px;
+	}
+	.carousel-subtitle {
+		font-size: 13px;
+	}
+	.carousel-caption-custom {
+		width: 90%;
+	}
+	.intro-section {
+		padding: 40px 0 20px;
+	}
+	.services-section {
+		padding: 40px 0 30px;
+	}
+	.cta-section {
+		padding: 60px 0;
+	}
+	.cta-title {
+		font-size: 22px;
+	}
+	.client-logo {
+		font-size: 18px;
+	}
+}
+
